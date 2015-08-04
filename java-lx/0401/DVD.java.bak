@@ -1,0 +1,4 @@
+public interface DVD{
+	public void dvdplay();
+	public void dvdburn();
+}

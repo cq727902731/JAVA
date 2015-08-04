@@ -1,0 +1,22 @@
+import com.wyhello.util.FrameToolkit;
+import java.awt.Point;
+import javax.swing.JFrame;
+
+class MyFrame extends JFrame{
+
+	public MyFrame(){}
+
+	public MyFrame(int width,int height){
+		Point p = FrameToolkit.getFrameInScreenCenterPoint(width,height);
+		setSize(width,height);
+		setLocation(p);
+		setVisible(true);
+	}
+	
+
+
+	public static void main(String[] args){
+		new MyFrame(400,400);
+	}
+}
+   

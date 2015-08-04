@@ -1,0 +1,11 @@
+package	com.mainPackage;
+
+public class MainClass{
+	public int q1 = 23;
+	private int q2 = 32;
+	int q3 = 87;
+	
+	
+
+	
+}

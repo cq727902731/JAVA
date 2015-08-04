@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+
+class DiveGrade{
+	int i = 0;
+	double d = 0.0;
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("请输入7位裁判的分数:"); 
+		int i = sc.nextInt();
+		int j[] = new int[7];
+		for (double d = 0.0;d < i.length ;i++ ){
+			d[i] = (int)(Math.random()*10);
+		}
+		for(int item:j){
+			System.out.println("j = " + item);
+		}
+	}
+}

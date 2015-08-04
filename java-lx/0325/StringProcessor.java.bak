@@ -1,0 +1,38 @@
+class StringProcessor{
+
+
+    public static void main(String[] args){
+	StringProcessor sp = new StringProcessor();
+	String str = sp.genRandomNumString((int)(Math.random() * 20));
+		
+	System.out.println(str);
+	System.out.println("转为小写" + str.toLowerCase());
+	System.out.println("转为大写" + str.toUpperCase());
+	System.out.println("字符串的长度:" + str.length());
+
+public String genRandomNumString(int len){
+        String str = "";
+		boolean isRepeat = false;
+		for (int i=0;i < 5 ;){
+			int r = (int)Math.random() * 58) + 65;
+			//System.out.println("i = " + i + " , r = " +r); 
+			switch(rand){
+				case 91:
+				case 92: 
+				case 93: 
+				case 94: 
+				case 95:
+				case 96:
+				isRepeat = true;
+		}
+		if (isRepeat){
+			isRepeat = false;
+			continue;
+		}else{
+			i++;
+		}
+		str += {char}r;
+	}
+	return str;
+}
+}

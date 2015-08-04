@@ -1,0 +1,13 @@
+class ds{
+	public static void main(String[] args){
+		byte b = 121;
+	    int i = b;
+		
+		int j = 3;
+		byte b1 = (byte)j;
+
+		byte b2 = 5;
+		b2 = (byte)(b2 - 2);
+		Syetem.out.println(b2);
+}
+}

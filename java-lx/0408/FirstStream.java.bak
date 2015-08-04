@@ -1,0 +1,14 @@
+import java.io.InputStream;
+import java.io.IOException;
+import java.io.FileInputStream;
+import java.io.FileDescriptor;
+
+class FirstStream{
+
+	public static void main(String[] args) throws IOException{
+		FileDescriptor is = new FileInputStream(File,data1); 
+		int data = is.read();
+			System.out.println(data);
+			data = is.read();				    
+	}
+}

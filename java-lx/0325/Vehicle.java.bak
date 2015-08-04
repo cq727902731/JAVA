@@ -1,0 +1,7 @@
+class Vehicle{
+	
+	public void run(){
+		System.out.println("ËÙ¶ÈÎª");
+	}
+
+}

@@ -1,0 +1,99 @@
+class Student{
+
+	String sNo;//学号
+	String sName;//姓名	
+	String sSex;//性别
+	int sAge;//年龄
+	double sJava;//java课程的成绩
+
+	public String getNo(){
+		return sNo;
+	}
+	public String getName(){
+		return sName;
+	}
+	public String getSex(){
+		return sSex;
+	}
+	public int getAge(){
+		return sAge;
+	}
+	public double getJava(){
+		return sJava;
+	}
+	
+}
+class Test{
+
+	public static void main(String[] args){
+		Student s1 = new Student();
+		Student s2 = new Student();
+		Student s3 = new Student();
+		Student s4 = new Student();
+		Student s5 = new Student();
+		
+		s1.sNo = "1";
+		s1.sName =  "徐明辉";
+		s1.sSex = "男";
+		s1.sAge = 23;
+		s1.sJava = 90;
+		System.out.println("学号:" + s1.sNo + "\n姓名:" + s1.sName + "\n性别:" + s1.sSex + "\n年龄:" + s1.sAge + "\n成绩:" + s1.sJava);
+
+		s2.sNo = "2";
+		s2.sName = "钟鑫";
+		s2.sSex = "男";
+		s2.sAge = 18;
+		s2.sJava = 88;
+		System.out.println("学号:" + s2.sNo + "\n姓名:" + s2.sName + "\n性别:" + s2.sSex + "\n年龄:" + s2.sAge + "\n成绩:" + s2.sJava);
+
+		s3.sNo = "3";
+		s3.sName =  "常宇";
+		s3.sSex = "男";
+		s3.sAge = 23;
+		s3.sJava = 86;
+		System.out.println("学号:" + s3.sNo + "\n姓名:" + s3.sName + "\n性别:" + s3.sSex + "\n年龄:" + s3.sAge + "\n成绩:" + s3.sJava);
+
+		s4.sNo = "4";
+		s4.sName =  "杨婷婷";
+		s4.sSex = "女";
+		s4.sAge = 22;
+		s4.sJava = 87;
+		System.out.println("学号:" + s4.sNo + "\n姓名:" + s4.sName + "\n性别:" + s4.sSex + "\n年龄:" + s4.sAge + "\n成绩:" + s4.sJava);
+
+		s5.sNo = "5";
+		s5.sName =  "崔强";
+		s5.sSex = "男";
+		s5.sAge = 24;
+		s5.sJava = 89;
+		System.out.println("学号:" + s5.sNo + "\n姓名:" + s5.sName + "\n性别:" + s5.sSex + "\n年龄:" + s5.sAge + "\n成绩:" + s5.sJava);
+
+		double average = (s1.sJava + s2.sJava + s3.sJava + s4.sJava + s5.sJava)/5;
+			System.out.println("五个学生的平均分为:" + average);
+
+		Student max = s1;
+		if (s1.sJava < s2.sJava){
+			max = s2;
+		}if (max.sJava < s3.sJava){
+			max = s3;
+		}if (max.sJava < s4.sJava){
+			max = s4;
+		}if (max.sJava < s5.sJava){
+			max = s5;
+		}
+		System.out.println("最高分为:" + "学号:" + max.sNo + "\t姓名:" + max.sName + "\t性别:" + max.sSex + "\t年龄:" + max.sAge + "\t成绩:" + max.sJava);
+
+		Student min = s1;
+		if (s1.sJava > s2.sJava){
+			min = s2;
+		}if (min.sJava > s3.sJava){
+			min = s3;
+		}if (min.sJava > s4.sJava){
+			min = s4;
+		}if (min.sJava > s5.sJava){
+			min = s5;
+		} 
+		System.out.println("最低分为:" + "学号:" + min.sNo + "\t姓名:" + min.sName + "\t性别:" + min.sSex + "\t年龄:" + min.sAge + "\t成绩:" + min.sJava);
+		
+		}
+	}	
+

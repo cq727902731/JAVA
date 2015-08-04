@@ -1,0 +1,6 @@
+package	com.MainPackage;
+
+public class MainSubClass extends MainClass{
+	
+	}
+}

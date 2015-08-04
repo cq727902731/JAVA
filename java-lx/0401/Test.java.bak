@@ -1,0 +1,20 @@
+
+
+public class Test{
+
+	public static void main(String[] args){
+		Telephone iphone6 = new Apple("iphone6");
+	    Battery b = new Byd("比亚迪",10000,"锂电子");
+		
+		b.setBattery(b);
+
+		b.call();
+		b.sendMsg("你是SB");
+
+	}
+}
+
+
+
+		
+		

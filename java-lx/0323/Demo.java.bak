@@ -1,0 +1,14 @@
+class Demo{
+	public static void main(String[] args){
+		int i = 12;
+			int j=3,k=3,m=2,n=3;
+		float h = 23.3f;
+		h = k;
+		System.out.println(i);
+		System.out.println(j);
+		System.out.println(k);
+		System.out.println(m);
+		System.out.println(n);
+		System.out.println(h);
+	}
+}

@@ -1,0 +1,28 @@
+package com.wyhello.cuiqiang;
+class Addition{
+	int a;
+	int b;
+	
+	public Addition(int a,int b){
+		this.a = a;
+		this.b = b;
+	}
+	public int add (int a,int b){
+		System.out.println("a + b = " + (a + b));
+		return a + b;
+	}
+	public double add (double a,double b){
+		System.out.println("a + b = " + (a + b));
+		return a + b;
+	}
+}
+class MyAddition{
+
+	public static void main(String[] args){
+		Addition ad = new Addition(9,10);
+		ad.add(3,4);
+		ad.add(5.6,7.8);
+	}
+
+
+}
